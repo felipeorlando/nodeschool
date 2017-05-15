@@ -1,9 +1,9 @@
-var fs = require('fs');
+const fs = require('fs')
 
-var userInput = process.argv[2];
+const userInput = process.argv[2]
 
-var fileContent = fs.readFileSync(userInput).toString();
+const fileContent = fs.readFileSync(userInput).toString()
 
-var result = fileContent.split('\n').length - 1;
+const result = fileContent.split('\n').length - 1
 
-console.log(result);
+console.log(result)

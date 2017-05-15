@@ -1,9 +1,9 @@
 var fs = require('fs');
 
-var userInput = process.argv[2];
+var userInput = process.argv[2]
 
 fs.readFile(userInput, 'utf8', function(error, data) {
   if (!error) {
-    console.log(data.split('\n').length - 1);
+    console.log(data.split('\n').length - 1)
   }
-});
+})
